@@ -25,8 +25,9 @@ function renderList() {
     ${data.map((item, index) => `
         <li style="list-style: none;" >
         </br>
-            <span id="todotxt">${item.userval}</span>
-            <li id="dateli">date:<span>${item.date}</span></li>
+             <span id="todotxt"> ${item.userval}</span>
+             </br>
+             <span id="dateli" >${item.date}</span>
             <div class="d-flex gap-4">
                 <button class="btn btn-info" onclick="editItem(${index}), getindex(${index})">Edit Todo</button>
                 <button class="btn btn-danger" onclick="deleteitem(${index})">Delete Todo</button>
@@ -36,6 +37,7 @@ function renderList() {
     </ul>
     `;
 }
+
 
 function deleteitem(index) {
   data.splice(index, 1);

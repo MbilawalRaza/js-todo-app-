@@ -2,12 +2,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7fa;
     color: #333;
+    
 }
 
 .container {
-    max-width: 600px;
     margin: auto;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
@@ -24,6 +23,7 @@ h1.display-4 {
 .input-group {
     border-radius: 5px;
     overflow: hidden;
+    padding-left: 33PX;
 }
 
 input[type="text"] {
@@ -95,7 +95,7 @@ button:hover {
     border-radius: 5px;
     padding: 8px 16px;
     font-size: 1rem;
-    background-color: #007bff;
+    background-color: #3B71CA;
     color: #ffffff;
     cursor: pointer;
     transition: background 0.3s;
@@ -107,22 +107,42 @@ button:hover {
 
 
 #todotxt{
-}
-:hover#dateli{
-    font-weight:900;
-}
-:hover#todotxt{
-    font-size: large;
+    padding: 0;
     font-weight: bold;
+    width: 100%;
+   border-bottom: 0.3px solid  rgb(37, 37, 202)
+
+
+
+   
+   
+   
+}
+#ul{
+    height: auto;
+    width: 62%;
+ 
+    
 }
 
-#dateli {
+:hover#dateli{
+    
     list-style: none; 
     text-align: start; 
     font-weight: bolder; 
-    animation: slideIn 2s 1; 
-    margin: 20px 0; 
+    animation: slideIn 2s infinite; 
     position: relative; 
+    
+}
+
+
+#dateli {
+    height: auto;
+    width: 100%;
+    list-style: none; 
+    text-align: start; 
+    font-size: small; 
+   
 }@keyframes slideIn {
     0% {
         transform: translateX(15%); 
